@@ -45,6 +45,9 @@ html{
 
 
 }
+section{
+    padding: 3rem 9%;
+}
 
 .header .logo{
     font-size: 2.0rem;
@@ -74,6 +77,46 @@ html{
     display: none;
 }
 
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../midias/bg2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.home .content span{
+    font-size: 3rem;
+    color: var(--pink);
+}
+
+.home .content h3{
+    font-size: 4rem;
+    color: var(--black);
+    width: 60rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border:0.2rem solid var(--black);
+    color: var(--black);
+    font-size: 1rem;
+    padding: 0.7rem 3rem;
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover{
+    background: var(--pink);
+    background-color: var(--pink);
+    color: #fff;
+
+}
+
 
 
 
@@ -96,6 +139,10 @@ html{
 @media (max-width:991px){
     header{
         padding: 2rem 4%;
+    }
+
+    section{
+        padding: 3rem 4%;
     }
 }
 
@@ -128,6 +175,26 @@ html{
         font-size: 2.5rem;
 
 
+    }
+
+    .home{
+        justify-content: center;
+        background-position: left;
+
+    }
+
+    .home .content{
+        text-align: center;
+
+    }
+
+    .home .content span{
+        font-size: 2rem;
+    }
+
+    .home .content h3{
+        font-size: 4rem;
+        width: auto;
     }
 }
 
